@@ -1,28 +1,30 @@
+import Image from "next/image";
+
 export default function Titles() {
     const titleData = [
       {
-        title: "LIVE SHIPMENT TRACKING",
+        title: "Easily Plan Productions, Evenets..",
         description:
-          "24/7 real-time access to your shipment locations. Instantly share ETA updates with stakeholders during pickup or delivery.",
-        imageSrc: "/images/titles/5.logistics&distributionpage1.svg",
+          "You can manage and plan productions for anytime and shared across all the users in the platforme.",
+        imageSrc: "/images/titles/productionplanning.png",
       },
       {
-        title: "SMART ROUTE OPTIMIZATION",
+        title: "Accurate Forecasting sales with powerful AI agents",
         description:
-          "AI-driven route planning minimizes delays and fuel costs, ensuring faster deliveries with real-time traffic insights.",
-        imageSrc: "/images/titles/5.logistics&distributionpage1.svg",
-      },
-      {
-        title: "SUPPLY CHAIN VISIBILITY",
-        description:
-          "Monitor supplier reliability and inventory movement in real-time to prevent bottlenecks and optimize stock levels.",
-        imageSrc: "/images/titles/5.logistics&distributionpage1.svg",
+          "Our AI agents can facilitate your decision making, need a 7 days forecasting? we’ll cover you.",
+        imageSrc: "/images/titles/forecastingresults.png",
       },
       {
         title: "AUTOMATED ALERTS & NOTIFICATIONS",
         description:
           "Instant alerts for shipment delays, weather disruptions, and inventory shortages to keep operations running smoothly.",
-        imageSrc: "/images/titles/5.logistics&distributionpage1.svg",
+        imageSrc: "/images/titles/6.externalmarket&environmentalfactorspage.png",
+      },
+      {
+        title: "AUTOMATED ALERTS & NOTIFICATIONS",
+        description:
+          "Instant alerts for shipment delays, weather disruptions, and inventory shortages to keep operations running smoothly.",
+        imageSrc: "/images/titles/6.externalmarket&environmentalfactorspage.png",
       },
     ];
   
@@ -35,7 +37,7 @@ export default function Titles() {
               index % 2 === 0 ? "justify-between" : "flex-row-reverse justify-between"
             } items-center`}
           >
-            <img src={item.imageSrc} alt={item.title} />
+            <Image  src={item.imageSrc} width='800' height='200' alt={item.title} />
             <div className={`max-w-md p-4 ${index % 2 === 0 ? "mr-24" : "ml-16"}`}>
               <div className="flex items-center mb-2">
                 <span className="text-blue-500 text-5xl mr-2">•</span>
